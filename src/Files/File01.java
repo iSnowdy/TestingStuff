@@ -30,6 +30,8 @@ public class File01 {
 
             String line;
             while ((line = bufferedReader.readLine()) != null) System.out.println(line);
+            // While there's a line to read, it will print it. Starting from line 0 and when line 0 ends,
+            // it jumps to the next one (\n)
         } catch (Exception exception) {
             exception.printStackTrace();
         } finally {
