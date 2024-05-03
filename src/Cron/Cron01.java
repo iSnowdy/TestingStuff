@@ -3,9 +3,10 @@ package Cron;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+import java.awt.*;
 
 public class Cron01 {
-    public static void main (String[] args) {
+    public static void main () {
         System.out.println("Hello World");
 
         final ScheduledExecutorService SCHEDULER = Executors.newScheduledThreadPool(1);

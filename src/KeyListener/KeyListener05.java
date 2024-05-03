@@ -6,6 +6,8 @@ import java.awt.event.*;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 
+import Cron.Cron01;
+
 public class KeyListener05 extends JFrame implements KeyListener {
 
     private TextField textField;
@@ -32,6 +34,8 @@ public class KeyListener05 extends JFrame implements KeyListener {
         textField.addKeyListener(this);
         textField.setBackground(Color.ORANGE);
         textField.setFont(font);
+        textField.requestFocus();
+        textField.requestFocusInWindow();
         add(textField);
 
         // This label in the future will be the arrow inputs that the user must type
@@ -53,7 +57,8 @@ public class KeyListener05 extends JFrame implements KeyListener {
         setFocusable(true); // Permits user's inputs
         setFocusTraversalKeysEnabled(false);
         setVisible(true);
-        setLocationRelativeTo(null); // Position of the window pop up
+        setLocationRelativeTo(null); // Possition of the window pop up
+        Cron01.main();
     }
 
     // Other methods...
